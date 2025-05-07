@@ -1,0 +1,486 @@
+body {
+    margin: 0;
+}
+
+.alice {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.caveat {
+    font-family: "Caveat", system-ui;
+    font-optical-sizing: auto;
+    /* font-weight: ; */
+    font-style: normal;
+}
+
+.kaushan {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+.pinyon {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+#Intro{
+    background-color: #e4e0ec;
+    padding: 2%;
+}
+
+nav ul{
+    text-align: center;
+}
+
+li[class='kanit']{
+    display: inline-block;
+    margin-right: 9px;
+    margin-left: 9px;
+}
+li:hover{
+    transform: scale(1.05);
+    /* transition-delay: 2s; */
+    transition-duration: 500ms;
+}
+
+li[class='kanit'] a{
+    text-decoration: none;
+    text-transform: capitalize;
+   color: #8b0125;
+}
+
+li[class='kanit'] a:hover{
+    color: #ca0137;
+    
+    transition-duration: 1s;
+}
+
+.int-txt{
+    text-align: center;
+    margin: 5%;
+}
+
+.call{
+    color: #c8a1e0;
+}
+
+#form {
+    background-image: linear-gradient(#674188, #4a3060, #2e203a);
+    padding: 3%;
+
+}
+
+
+.form-components {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 100px;
+
+}
+
+.form {
+    padding: 10% 10% 12% 10%;
+    background-color: #e4e0ec;
+    border-radius: 30px 0 0 30px;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: 2fr;
+    gap: 5%;
+
+}
+
+input {
+    padding: 6%;
+    border-radius: 50px;
+    border: solid 1px #c8a1e0;
+    background-color: #c8a1e0;
+    color: #e4e0ec;
+    margin-top: 5%;
+    width: 90%;
+    font-size: 90%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 8%;
+    border: none;
+    border-radius: 3px;
+}
+
+textarea::placeholder{
+    color: #c8a1e0;
+}
+
+::placeholder {
+    color: #e4e0ec;
+}
+
+
+
+.alternatives {
+    background-color: #c8a1e0;
+    border-radius: 0 30px 30px 0;
+}
+
+.alternative{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.icon {
+    width: 5.5%;
+    margin: 0.5%;
+    fill: #e4e0ec;
+}
+
+.Contact{
+    border-right: solid 1px #e4e0ec;
+}
+
+.Social{
+    border-left: solid 1px #e4e0ec;
+}
+
+.Social a{
+    text-decoration: none;
+}
+
+
+.contact,.socials{
+    font-weight: 300;
+    font-size: 17px;
+    /* font-family: 'Awesome Lathusca'; */
+    color: #e4e0ec;
+}
+
+.number{
+    font-family: monospace;
+    color: #e4e0ec;
+}
+
+.number span{
+    color: #674188;
+}
+
+.socials{
+    text-transform: capitalize;
+}
+
+iframe{
+    height: 300px;
+    width: 500px;
+    margin:  50px 110px;
+    text-align: center;
+}
+
+.Copyright{
+    background-color: #c8a1e0;
+    padding: .2%;
+    text-align: center;
+}
+
+.Copyright p{
+    color: #e4e0ec;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #Intro{
+        background-color: #e4e0ec;
+        /* padding: %; */
+    }
+    
+    nav ul{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    li[class='kanit'] a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 12px;
+        color: #8b0125;
+    }
+    
+    #form {
+        background-image: linear-gradient(#674188, #4a3060, #2e203a);
+        padding: 5%;
+    }
+    
+    
+    .form-components {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 10px;
+    }
+    
+    .form {
+        padding: 10% 10% 12% 10%;
+        background-color: #e4e0ec;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-columns: 2fr;
+        gap: 5%;
+    
+    }
+    
+    input {
+        padding: 5%;
+        border-radius: 50px;
+        border: solid 1px #c8a1e0;
+        background-color: #c8a1e0;
+        color: #e4e0ec;
+        margin-top: 5%;
+        width: 90%;
+        font-size: 5.5px;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 50px;
+        margin-top: 10%;
+        border: none;
+        border-radius: 3px;
+        font-size: 6px;
+    }
+    
+    textarea::placeholder{
+        color: #c8a1e0;
+    }
+    
+    ::placeholder {
+        color: #e4e0ec;
+    }
+    
+    
+    .alternatives {
+        background-color: #c8a1e0;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .alternative{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    .icon {
+        width: 13.5%;
+        margin: 0.5%;
+        fill: #e4e0ec;
+    }
+    
+    .Contact{
+        border-right: solid 1px #e4e0ec;
+        font-size: 6px;
+    }
+    
+    .Social{
+        border-left: solid 1px #e4e0ec;
+    }
+    
+    
+    .contact,.socials{
+        font-weight: 300;
+        font-size: 10px;
+        /* font-family: 'Awesome Lathusca'; */
+        color: #e4e0ec;
+    }
+    
+    .number{
+        font-family: monospace;
+        color: #e4e0ec;
+    }
+    
+    .number span{
+        color: #674188;
+    }
+    
+    .socials{
+        text-transform: capitalize;
+    }
+    
+    .Copyright{
+        background-color: #c8a1e0;
+        padding: .2%;
+        text-align: center;
+    }
+
+    .Copyright p{
+        font-size: 8px;
+        color: #e4e0ec;
+    }
+  }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    
+    #Intro{
+        background-color: #e4e0ec;
+    }
+    
+    nav ul{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    li[class='kanit'] a{
+        text-decoration: none;
+        text-transform: capitalize;
+       color: #8b0125;
+       font-size: 13px;
+    }
+    
+    #form {
+        background-image: linear-gradient(#674188, #4a3060, #2e203a);
+        padding: 5%;
+    
+    }
+    
+    
+    .form-components {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 20px;
+    
+    }
+    
+    .form {
+        padding: 10% 10% 12% 10%;
+        background-color: #e4e0ec;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-columns: 2fr;
+        gap: 5%;
+    
+    }
+    
+    input {
+        padding: 6%;
+        border-radius: 50px;
+        border: solid 1px #c8a1e0;
+        background-color: #c8a1e0;
+        color: #e4e0ec;
+        margin-top: 5%;
+        width: 90%;
+        font-size: 8px;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 70px;
+        margin-top: 10%;
+        border: none;
+        border-radius: 3px;
+        font-size: 9px;
+    }
+    
+    textarea::placeholder{
+        color: #c8a1e0;
+    }
+    
+    ::placeholder {
+        color: #e4e0ec;
+    }
+    
+    
+    
+    .alternatives {
+        background-color: #c8a1e0;
+        border-radius: 0 20px 20px 0;
+    }
+    
+    .alternative{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 9px;
+    }
+    
+    .icon {
+        width: 9.5%;
+        margin: 0.5%;
+        fill: #e4e0ec;
+    }
+    
+    .Contact{
+        border-right: solid 1px #e4e0ec;
+    }
+    
+    .Social{
+        border-left: solid 1px #e4e0ec;
+    }
+    
+    
+    .contact,.socials{
+        font-weight: 300;
+        font-size: 14px;
+        /* font-family: 'Awesome Lathusca'; */
+        color: #e4e0ec;
+    }
+    
+    .number{
+        font-family: monospace;
+        color: #e4e0ec;
+    }
+    
+    .number span{
+        color: #674188;
+    }
+    
+    .socials{
+        text-transform: capitalize;
+    }
+    
+    .Copyright{
+        background-color: #c8a1e0;
+        padding: .2%;
+        text-align: center;
+    }
+    
+    .Copyright p{
+        font-size: 9px;
+        color: #e4e0ec;
+    }
+}
+

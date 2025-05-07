@@ -1,0 +1,784 @@
+body {
+    margin: 0;
+}
+
+p {
+    text-align: center;
+}
+
+.alice {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.caveat {
+    font-family: "Caveat", system-ui;
+    font-optical-sizing: auto;
+    /* font-weight: ; */
+    font-style: normal;
+}
+
+.kaushan {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 53pt;
+  }
+
+.pinyon {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 400px; */
+    margin: 0;
+}
+
+nav {
+    margin: 5% 0 0;
+    padding: 0;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li[class='kanit']{
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+li:hover{
+    transform: scale(1.05);
+    /* transition-delay: 2s; */
+    transition-duration: 500ms;
+}
+
+li[class='kanit'] a{
+    text-decoration: none;
+    text-transform: capitalize;
+   color: #8b0125;
+}
+
+li[class='kanit'] a:hover{
+    color: #ca0137;
+    
+    transition-duration: 1s;
+}
+
+.intro {
+    background-color: #e4e0ec;
+    position: relative;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo-svg{
+    width: 45%;
+    margin: -2% 1% 0 0;
+    padding: 0% 2%;
+}
+
+.greetings{
+    color: #c8a1e0;
+}
+
+.greeting{
+    text-align: center;
+    margin: 0;
+}
+
+.greeting p{
+    font-family: 'Brittany Signature';
+    color: #8b0125;
+    font-size: 50px;
+    padding: 1%;
+}
+
+.section-one-divider{
+    margin-top: 0px;
+    /* background-color: #c8a1e0; */
+    position: absolute;
+    width: 90%;
+
+}
+
+.image {
+    background-color: #8b0125;
+    text-align: center;
+}
+
+.image img{
+    width: 90%;
+}
+
+#about {
+    background-color: #c8a1e0;
+    margin: 0;
+    padding: 2%;
+    position: relative;
+}
+
+.about {
+    padding: 0 4% 4%;
+}
+
+.section-header {
+    color: #674188;
+}
+
+.about-txt {
+    color: #e4e0ec;
+    font-size: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+span[class='alice'] {
+    color: #e4e0ec;
+}
+
+.contact-me {
+    background-color: #674188;
+
+    border: none;
+    padding: 1% 2%;
+    border-radius: 30px;
+
+}
+
+.contact-me a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #c8a1e0;
+    text-decoration: none;
+}
+
+.divider-two{
+    position: relative;
+    
+}
+
+.section-two-divider{
+    margin-top: -2%;
+    position: absolute;
+    rotate: 168deg;
+}
+
+#Works {
+    
+    padding: 2%;
+    color: #c8a1e0;
+    background-image: linear-gradient(#674188, #4a3060, #2e203a);
+    text-align: center;
+}
+
+#Works>h2{
+    font-family: 'Awesome Lathusca';
+    color: #c8a1e0;
+    font-size: 25pt;
+    font-weight: 300;
+}
+
+.work-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 7%;
+}
+
+.work-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 7%;
+}
+
+.work-two .preview img{
+    rotate: -15deg;
+}
+
+.preview {
+
+    text-align: center;
+}
+
+.preview img{
+    rotate: 15deg;
+}
+
+.preview img:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+.preview-txt {
+    display: flex;
+    align-items: center;
+}
+
+.More {
+    text-align: center;
+}
+
+.works-button {
+    background-color: #674188;
+    border: none;
+    padding: 1% 2%;
+    border-radius: 30px;
+}
+
+.works-button a {
+    color: #e4e0ec;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+hr {
+    border: solid 1px #c8a1e0;
+    margin: 0;
+}
+
+#finals {
+    background-color: #2e203a;
+    margin: 0;
+}
+
+#finals .contact {
+    color: #e4e0ec;
+    padding: 5% 10%;
+    font-size: 19px;
+}
+
+.contact button[class='caveat'] {
+    background-color: #4a3060;
+    border: none;
+    border-radius: 30px;
+    padding: 1% 2%;
+    /* font-family: 'Rows of Sunflowers';*/
+} 
+
+.contact button[class='caveat'] a {
+    color: #e4e0ec;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.copyright {
+    background-color: #c8a1e0;
+    padding: 0.2%;
+}
+
+.copyright p{
+    color: #e4e0ec;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 400px; */
+        margin: 0;
+    }
+    
+    nav {
+        margin: 5% 0 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li[class='kanit']{
+        display: inline-block;
+        margin-left: 7px;
+        margin-right: px;
+    }
+    
+    li[class='kanit'] a{
+        text-decoration: none;
+        text-transform: capitalize;
+       color: #8b0125;
+       font-size: 9px;
+    }
+    
+    .intro {
+        background-color: #e4e0ec;
+        position: relative;
+    }
+    
+    .logo{
+        text-align: center;
+    }
+    
+    .logo-svg{
+        width: 75%;
+        margin: 10% 1% 0 0;
+        padding: 0% 2%;
+        height: 70%;
+    }
+    
+    .greetings{
+        color: #c8a1e0;
+        font-size: 7px;
+    }
+    
+    .greeting{
+        text-align: center;
+        margin: 0;
+    }
+    
+    .greeting p{
+        font-family: 'Brittany Signature';
+        color: #8b0125;
+        font-size: 25px;
+        padding: 1%;
+    }
+    
+    .section-one-divider{
+        margin-top: -88px;
+        /* background-color: #c8a1e0; */
+        position: absolute;
+        width: 110%;
+    
+    }
+    
+    .image {
+        background-color: #8b0125;
+    }
+
+    .image img{
+        width: 100%;
+    }
+    
+    #about {
+        background-color: #c8a1e0;
+        margin: 0;
+        padding: 2%;
+        position: relative;
+    }
+    
+    .about {
+        padding: 0 4% 4%;
+    }
+    
+    .section-header {
+        color: #674188;
+        font-size: 15px;
+    }
+    
+    .about-txt {
+        color: #e4e0ec;
+        font-size: 10px;
+    }
+    
+    .contact {
+        text-align: center;
+    }
+    
+    span[class='alice'] {
+        color: #e4e0ec;
+        font-size: 9px;
+    }
+    
+    .contact-me {
+        background-color: #674188;
+        border: none;
+        padding: 0.2% 3% 1.2%;
+        border-radius: 20px;
+    
+    }
+    
+    .contact-me a {
+        font-size: 8px;
+        text-transform: uppercase;
+        color: #c8a1e0;
+        text-decoration: none;
+    }
+    
+    .divider-two{
+        position: relative;
+        margin: 2%;
+    }
+    
+    .section-two-divider{
+        margin-top: -2%;
+        position: absolute;
+        rotate: 168deg;
+    }
+    
+    #Works {
+        padding: 2%;
+        color: #c8a1e0;
+        background-image: linear-gradient(#674188, #4a3060, #2e203a);
+        text-align: center;
+    }
+    
+    #Works>h2{
+        font-family: 'Awesome Lathusca';
+        color: #c8a1e0;
+        font-size: 15pt;
+        font-weight: 300;
+    }
+    
+    .work-one {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 7%;
+    }
+    
+    .work-two {
+        display: grid;
+        margin: 7%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .preview{
+        width: 100%;
+        height: 100%;
+    }
+
+    .preview img{
+        width: 55%;
+        rotate: 15deg;
+    }
+
+    .work-two img{
+        rotate: -15deg;
+    }
+    
+    .preview-txt {
+        display: flex;
+        align-items: center;
+        font-size: 6px;
+        padding: 2%;
+    }
+
+    .More {
+        text-align: center;
+    }
+    
+    .works-button {
+        background-color: #674188;
+        border: none;
+        padding: 0.5% 3% 1.2%;
+        border-radius: 30px;
+    }
+    
+    .works-button a {
+        color: #e4e0ec;
+        text-decoration: none;
+        font-size: 9px;
+        text-transform: capitalize;
+    }
+    
+    hr {
+        border: solid 1px #c8a1e0;
+        margin: 0;
+    }
+    
+    #finals {
+        background-color: #2e203a;
+        margin: 0;
+    }
+    
+    #finals .contact {
+        color: #e4e0ec;
+        padding: 5% 10%;
+        font-size: 9px;
+    }
+    
+    .contact button[class='cavet'] {
+        background-color: #4a3060;
+        border: none;
+        border-radius: 30px;
+        padding: 0.5% 2% 1.2%;
+        font-family: 'Rows of Sunflowers';
+    }
+    
+    .contact button[class='cavet'] a {
+        color: #e4e0ec;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    
+    
+    
+    .copyright {
+        background-color: #c8a1e0;
+        padding: 0.2%;
+    }
+
+    .copyright p{
+        color: #e4e0ec;
+        font-size: 6px;
+    }
+}
+
+@media (min-width:481px) and (max-width:1024px){
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 400px; */
+        margin: 0;
+    }
+    
+    nav {
+        margin: 5% 0 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li[class='kanit']{
+        display: inline-block;
+        margin-left: 7px;
+        margin-right: px;
+    }
+    
+    li[class='kanit'] a{
+        text-decoration: none;
+        text-transform: capitalize;
+       color: #8b0125;
+       font-size: 13px;
+    }
+    
+    .intro {
+        background-color: #e4e0ec;
+        position: relative;
+    }
+    
+    .logo{
+        text-align: center;
+    }
+    
+    .logo-svg{
+        width: 75%;
+        margin: 10% 1% 0 0;
+        padding: 0% 2%;
+        height: 70%;
+    }
+    
+    .greetings{
+        color: #c8a1e0;
+        font-size: 10px;
+        padding-top: 1%;
+    }
+    
+    .greeting{
+        text-align: center;
+        margin: 0;
+    }
+    
+    .greeting p{
+        font-family: 'Brittany Signature';
+        color: #8b0125;
+        font-size: 30px;
+        padding: 1%;
+    }
+    
+    .section-one-divider{
+        margin-top: -80px;
+        /* background-color: #c8a1e0; */
+        position: absolute;
+        width: 110%;
+    
+    }
+    
+    .image {
+        background-color: #8b0125;
+    }
+
+    .image img{
+        width: 95%;
+    }
+    
+    #about {
+        background-color: #c8a1e0;
+        margin: 0;
+        padding: 2%;
+        position: relative;
+    }
+    
+    .about {
+        padding: 0 4% 4%;
+    }
+    
+    .section-header {
+        color: #674188;
+        font-size: 20px;
+    }
+    
+    .about-txt {
+        color: #e4e0ec;
+        font-size: 14px;
+    }
+    
+    .contact {
+        text-align: center;
+    }
+    
+    span[class='alice'] {
+        color: #e4e0ec;
+        font-size: 12px;
+    }
+    
+    .contact-me {
+        background-color: #674188;
+        border: none;
+        padding: 1% 3% 1%;
+        border-radius: 20px;
+    
+    }
+    
+    .contact-me a {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #c8a1e0;
+        text-decoration: none;
+    }
+    
+    .divider-two{
+        position: relative;
+        margin: 2%;
+    }
+    
+    .section-two-divider{
+        margin-top: -2%;
+        position: absolute;
+        rotate: 168deg;
+    }
+    
+    #Works {
+        padding: 2%;
+        color: #c8a1e0;
+        background-image: linear-gradient(#674188, #4a3060, #2e203a);
+        text-align: center;
+    }
+    
+    #Works>h2{
+        font-family: 'Awesome Lathusca';
+        color: #c8a1e0;
+        font-size: 20pt;
+        font-weight: 300;
+    }
+    
+    .work-one {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5%;
+    }
+    
+    .work-two {
+        display: grid;
+        margin: 7%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .preview{
+        width: 100%;
+        height: 100%;
+    }
+
+    .preview img{
+        width: 55%;
+        rotate: 15deg;
+    }
+
+    .work-two img{
+        rotate: -15deg;
+    }
+    
+    .preview-txt {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        padding: 2%;
+    }
+    
+    .More {
+        text-align: center;
+        padding: 1%;
+    }
+    
+    .works-button {
+        background-color: #674188;
+        border: none;
+        padding: 1% 3% 1%;
+        border-radius: 30px;
+    }
+    
+    .works-button a {
+        color: #e4e0ec;
+        text-decoration: none;
+        font-size: 13px;
+        text-transform: capitalize;
+    }
+    
+    hr {
+        border: solid 1px #c8a1e0;
+        margin: 0;
+    }
+    
+    #finals {
+        background-color: #2e203a;
+        margin: 0;
+    }
+    
+    #finals .contact {
+        color: #e4e0ec;
+        padding: 5% 10%;
+        font-size: 12px;
+    }
+    
+    .contact button[class='cavet'] {
+        background-color: #4a3060;
+        border: none;
+        border-radius: 30px;
+        padding: 1% 3% 1.1%;
+        font-family: 'Rows of Sunflowers';
+    }
+    
+    .contact button[class='cavet'] a {
+        color: #e4e0ec;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    
+    
+    .copyright {
+        background-color: #c8a1e0;
+        padding: 0.2%;
+    }
+
+    .copyright p{
+        color: #e4e0ec;
+        font-size: 11px;
+    }
+}
